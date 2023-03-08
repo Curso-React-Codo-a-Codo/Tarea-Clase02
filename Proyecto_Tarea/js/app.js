@@ -1,4 +1,4 @@
-const boton = document.getElementById('boton');
+const boton = document.getElementById('boton');                 
 boton.addEventListener('click', function() {
 	const nombre = prompt('¿Cuál es tu nombre?');
     if (nombre == null || nombre == "" )

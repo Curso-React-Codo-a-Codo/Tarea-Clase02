@@ -1,10 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
+/*importar fuentes de google*/
+
 *{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 } /*Elegimos letra y ponemos margen y padding 0 a toda la pagina*/
 
-section {
+html{
+    scroll-behavior: smooth; /*permite deslizar cuando hace click en link del menu*/
+}
+
+/*section {
     display: flex;
     align-items: center;
     justify-content:center;
@@ -37,13 +45,11 @@ section {
     font-weight: 700;
 }/*le damos tamaño y detalles al boton*/
 
-html{
-    scroll-behavior: smooth; /*permite deslizar cuando hace click en link del menu*/
-}
+/*=================================================================================================================*/
 
 /*MENU*/
 .contenedor-header{
-    background: black;
+    background: #1e2326;
     position: fixed;
     width: 100%;
     top: 0;
@@ -61,8 +67,9 @@ html{
 }
 
 .contenedor-header header .logo a{
+    font-family: Righteous;
     font-size: 36px;
-    color: aqua;
+    color: #1CB698;
     text-decoration: none;
 }
 
@@ -73,7 +80,7 @@ html{
 
 .contenedor-header header nav ul li a{
     text-align: none;
-    color: antiquewhite;
+    color: #fff;
     margin: 0 15px;
     padding: 3px;
     transition: .5s;
@@ -81,14 +88,72 @@ html{
 }
 
 .contenedor-header header nav ul li a:hover{
-    color: aquamarine;
+    color: #1CB698;
 }
 
 .nav-responsive{
-    background-color: aqua;
-    color: antiquewhite;
+    background-color: #1CB698;
+    color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     display: none;
+}
+
+/*SECCION INICIO*/
+
+.inicio{
+    background: linear-gradient(to top, rgba(52, 59, 63, 0.8),rgb(59, 66, 70)),url(/Proyecto_Tarea/img/background.png);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px solid #1CB698;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42;
+    line-height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido-banner .redes a:hover{
+    background-color: #1CB698;
 }
