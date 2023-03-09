@@ -103,7 +103,7 @@ html{
 /*SECCION INICIO*/
 
 .inicio{
-    background: linear-gradient(to top, rgba(52, 59, 63, 0.8),rgb(59, 66, 70)),url(/Proyecto_Tarea/img/background.png);
+    background: linear-gradient(to top, rgba(52, 59, 63, 0.8),rgb(59, 66, 70)),url(/img/background.png);
     background-size: cover;
     height: 100vh;
     color: #fff;
